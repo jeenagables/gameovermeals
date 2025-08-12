@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over Meals — Play for Your Plate | Delivery Only</title>
+    <meta name="description" content="Game Over Meals — cinematic, delivery-only food service. Delivered in our iconic pink Civic. Burgers • Pizza • Fried Chicken • Wraps. Order: +92-XXX-XXXXXXX.">
+    <meta property="og:title" content="Game Over Meals — Play for Your Plate | Delivery Only">
+    <meta property="og:description" content="Cinematic, delivery-only food service delivered in our iconic pink Civic">
+    <meta property="og:image" content="https://example.com/assets/hero-car-3q.webp">
+    <meta property="og:url" content="https://gameovermeals.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Game Over Meals",
+      "image": "https://example.com/assets/logo-gameovermeals.svg",
+      "telephone": "+92-XXX-XXXXXXX",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Karachi",
+        "addressRegion": "Sindh",
+        "postalCode": "75500",
+        "addressCountry": "PK"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "11:00",
+          "closes": "23:00"
+        }
+      ],
+      "areaServed": {
+        "@type": "GeoShape",
+        "circle": "Karachi, 25 km"
+      }
+    }
+    </script>
+    <style>
+    :root {
+      --pink: #FF2D95;
+      --black: #000000;
+      --gray: #1A1A1A;
+      --white: #FFFFFF;
+      --max-width: 1100px;
+      --transition: all 0.3s ease;
+    }
+
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Oswald', 'GameInspiredDisplay', Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--pink);
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: 90%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: var(--pink);
+      color: var(--white);
+      border: 2px solid var(--pink);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 0;
+      transition: var(--transition);
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: transparent;
+      color: var(--pink);
+      box-shadow: 0 0 20px rgba(255, 45, 149, 0.4);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--pink);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--pink);
+      color: var(--white);
+    }
+
+    .section {
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 60px;
+      text-align: center;
+      position: relative;
+      color: var(--white);
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background-color: var(--pink);
+    }
+
+    .grid {
+      display: grid;
+      gap: 30px;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Hero Section */
+    #hero {
+      height: 100vh;
+      min-height: 700px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                  url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%231a1a1a"/><path d="M0,0 L100,100 M100,0 L0,100" stroke="%23000" stroke-width="1"/></svg>');
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      max-width: 600px;
+    }
+
+    .hero-logo {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 5px 15px rgba(0,0,0,0.5));
+    }
+
+    .hero-tagline {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+      font-weight: 700;
+      color: var(--white);
+      text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .hero-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .car-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="%23FF2D95" stroke-width="2"/><polygon points="50,20 70,80 30,80" fill="none" stroke="%23FF2D95" stroke-width="2"/><rect x="35" y="35" width="30" height="30" fill="none" stroke="%23FF2D95" stroke-width="2"/></svg>') no-repeat center center;
+      background-size: contain;
+      opacity: 0.1;
+      z-index: 2;
+    }
+
+    .guard-overlay {
+      position: absolute;
+      bottom: 0;
+      height: 70%;
+      z-index: 3;
+      filter: drop-shadow(0 0 10px rgba(255,45,149,0.5));
+    }
+
+    .guard-left {
+      left: 0;
+    }
+
+    .guard-right {
+      right: 0;
+    }
+
+    /* Sticky Order Bar */
+    .sticky-order-bar {
+      position: fixed;
+      top: -100px;
+      left: 0;
+      width: 100%;
+      background-color: var(--black);
+      border-bottom: 2px solid var(--pink);
+      padding: 15px 0;
+      z-index: 1000;
+      transition: top 0.4s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .sticky-order-bar.visible {
+      top: 0;
+    }
+
+    .order-now-text {
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    /* Why Section */
+    #why {
+      background-color: var(--gray);
+    }
+
+    .why-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .why-content p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    .geometric-divider {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .geometric-shape {
+      width: 30px;
+      height: 30px;
+      background-color: var(--pink);
+    }
+
+    .circle {
+      border-radius: 50%;
+    }
+
+    .triangle {
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    .square {
+      /* Square is already square */
+    }
+
+    /* Menu Section */
+    .menu-filters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+
+    .filter-btn {
+      padding: 10px 20px;
+      background-color: transparent;
+      color: var(--white);
+      border: 2px solid var(--pink);
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      background-color: var(--pink);
+      color: var(--white);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .menu-item {
+      background-color: var(--gray);
+      border-radius: 5px;
+      overflow: hidden;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+
+    .menu-item-image {
+      height: 200px;
+      background-color: #333;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .menu-item-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 40px;
+      height: 40px;
+      background-color: var(--pink);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+    }
+
+    .menu-item-content {
+      padding: 20px;
+    }
+
+    .menu-item-title {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: var(--white);
+    }
+
+    .menu-item-desc {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .menu-item-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-item-price {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--pink);
+    }
+
+    /* How It Works */
+    #how-it-works {
+      background-color: var(--gray);
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      text-align: center;
+    }
+
+    .step {
+      position: relative;
+    }
+
+    .step-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      background-color: var(--pink);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      position: relative;
+    }
+
+    .step-number {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background-color: var(--black);
+      color: var(--pink);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      border: 2px solid var(--pink);
+    }
+
+    .step-title {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: var(--white);
+    }
+
+    /* Hours & Coverage */
+    .coverage-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .hours {
+      background-color: var(--gray);
+      padding: 30px;
+      border-radius: 5px;
+    }
+
+    .hours-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: var(--pink);
+    }
+
+    .hours-list {
+      list-style: none;
+    }
+
+    .hours-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    .map-container {
+      background-color: var(--gray);
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .map-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(255,45,149,0.1) 0%, rgba(0,0,0,0.8) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .map-overlay h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: var(--white);
+    }
+
+    .zones-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      max-width: 400px;
+    }
+
+    .zone {
+      background-color: var(--pink);
+      color: var(--white);
+      padding: 8px 15px;
+      border-radius: 30px;
+      font-weight: 600;
+    }
+
+    /* Reviews */
+    #reviews {
+      background-color: var(--gray);
+    }
+
+    .reviews-container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .review {
+      background-color: var(--black);
+      padding: 30px;
+      border-radius: 5px;
+      text-align: center;
+      border: 1px solid #333;
+    }
+
+    .review-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .review-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #333;
+      margin-right: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      color: var(--pink);
+    }
+
+    .review-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .review-rating {
+      color: gold;
+      font-size: 1.2rem;
+      letter-spacing: 3px;
+      margin: 10px 0;
+    }
+
+    .review-text {
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .review-date {
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    /* Order Section */
+    .order-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .order-form {
+      background-color: var(--gray);
+      padding: 30px;
+      border-radius: 5px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      background-color: #222;
+      border: 1px solid #444;
+      color: var(--white);
+      border-radius: 0;
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+    }
+
+    .whatsapp-info {
+      background: linear-gradient(135deg, var(--pink) 0%, #d40078 100%);
+      padding: 30px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .whatsapp-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .whatsapp-info h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .whatsapp-info p {
+      margin-bottom: 20px;
+      max-width: 400px;
+    }
+
+    .phone-number {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 20px 0;
+      display: block;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--black);
+      padding: 60px 0 30px;
+      border-top: 2px solid var(--pink);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .footer-column h4 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: var(--pink);
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: #aaa;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--pink);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: var(--transition);
+    }
+
+    .social-icon:hover {
+      background-color: var(--pink);
+      transform: translateY(-5px);
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid #333;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    .disclaimer {
+      background-color: var(--black);
+      padding: 15px;
+      text-align: center;
+      border-top: 1px solid var(--pink);
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    /* WhatsApp Float */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      transition: var(--transition);
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.4);
+    }
+
+    /* Parallax effect for hero */
+    .parallax-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .parallax-back {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%231a1a1a"/><path d="M0,0 L100,100 M100,0 L0,100" stroke="%23000" stroke-width="1"/></svg>');
+      transform: translateZ(-2px) scale(3);
+      z-index: 1;
+    }
+
+    .parallax-middle {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle cx="100" cy="100" r="40" fill="%23FF2D95" opacity="0.1"/><polygon points="100,40 160,160 40,160" fill="%23FF2D95" opacity="0.1"/><rect x="70" y="70" width="60" height="60" fill="%23FF2D95" opacity="0.1"/></svg>');
+      background-size: cover;
+      transform: translateZ(-1px) scale(2);
+      z-index: 2;
+    }
+
+    .parallax-front {
+      transform: translateZ(0);
+      z-index: 3;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .hidden {
+      opacity: 0;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .section {
+        padding: 80px 0;
+      }
+      
+      .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .coverage-container,
+      .order-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .hero-tagline {
+        font-size: 1.5rem;
+      }
+      
+      .hero-btns {
+        flex-direction: column;
+      }
+      
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+      
+      .menu-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .guard-overlay {
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section {
+        padding: 60px 0;
+      }
+      
+      .section-title {
+        font-size: 1.8rem;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+    </style>
+</head>
+<body>
+    <!-- Sticky Order Bar -->
+    <div class="sticky-order-bar">
+        <div class="order-now-text">READY TO ORDER?</div>
+        <a href="#order" class="btn">ORDER NOW</a>
+    </div>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/92XXXXXXXXX" class="whatsapp-float" aria-label="Order via WhatsApp">
+        <span>💬</span>
+    </a>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="parallax-layer parallax-back"></div>
+        <div class="parallax-layer parallax-middle"></div>
+        <div class="parallax-layer parallax-front">
+            <div class="container">
+                <div class="hero-content">
+                    <svg class="hero-logo" viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="100" font-family="'GameInspiredDisplay', Oswald, Arial, sans-serif" font-size="80" fill="#FF2D95">GAME</text>
+                        <text x="0" y="150" font-family="'GameInspiredDisplay', Oswald, Arial, sans-serif" font-size="80" fill="#FF2D95">OVER MEALS</text>
+                        <circle cx="360" cy="80" r="25" fill="#FF2D95" />
+                        <polygon points="300,30 330,100 270,100" fill="#FF2D95" />
+                        <rect x="405" y="55" width="30" height="30" fill="#FF2D95" />
+                    </svg>
+                    <h2 class="hero-tagline">Play for Your Plate — Delivered in our Iconic Pink Civic</h2>
+                    <div class="hero-btns">
+                        <a href="#order" class="btn">ORDER NOW</a>
+                        <a href="#menu" class="btn btn-secondary">VIEW MENU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="guard-overlay guard-left"></div>
+        <div class="guard-overlay guard-right"></div>
+    </section>
+
+    <!-- Why Section -->
+    <section id="why" class="section">
+        <div class="container">
+            <h2 class="section-title">WHY GAME OVER MEALS?</h2>
+            <div class="why-content">
+                <p>Born from a passion for extraordinary food and unforgettable experiences, Game Over Meals emerged when two culinary enthusiasts—one a street food fanatic, the other a gourmet chef (Dr. Maham)—decided to revolutionize delivery dining.</p>
+                <p>We merge premium street food with cinematic presentation. Every meal is a production—carefully crafted, meticulously packaged, and dramatically delivered in our signature hot-pink Civic by our mysterious "game guards."</p>
+                <p>Safety isn't just a protocol—it's our obsession. Temperature-controlled packaging, contactless delivery, and military-grade freshness ensure your meal arrives as perfect as when it left our kitchen.</p>
+                <div class="geometric-divider">
+                    <div class="geometric-shape circle"></div>
+                    <div class="geometric-shape triangle"></div>
+                    <div class="geometric-shape square"></div>
+                </div>
+                <p>This isn't just dinner—it's an event. Play for your plate. The game begins now.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="section">
+        <div class="container">
+            <h2 class="section-title">THE MENU</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">ALL ITEMS</button>
+                <button class="filter-btn" data-filter="burgers">BURGERS</button>
+                <button class="filter-btn" data-filter="pizza">PIZZA</button>
+                <button class="filter-btn" data-filter="chicken">CHICKEN</button>
+                <button class="filter-btn" data-filter="sides">SIDES</button>
+                <button class="filter-btn" data-filter="drinks">DRINKS</button>
+            </div>
+            <div class="menu-grid">
+                <!-- Burger -->
+                <div class="menu-item" data-category="burgers">
+                    <div class="menu-item-image" style="background: linear-gradient(45deg, #5a3e1f, #a67c52);"></div>
+                    <div class="menu-item-badge">
+                        <div class="triangle" style="width:20px;height:20px;background:#000;"></div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Final Boss Burger</h3>
+                        <p class="menu-item-desc">Double beef patty, pink pepper sauce, crispy onions, pickles</p>
+                        <div class="menu-item-footer">
+                            <div class="menu-item-price">Rs 1,299</div>
+                            <button class="btn">ADD TO ORDER</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pizza -->
+                <div class="menu-item" data-category="pizza">
+                    <div class="menu-item-image" style="background: linear-gradient(45deg, #c54b4b, #e67e22);"></div>
+                    <div class="menu-item-badge">
+                        <div class="circle" style="width:20px;height:20px;background:#000;"></div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Guard's Special Pizza</h3>
+                        <p class="menu-item-desc">Spicy pepperoni, hot-pink sauce, mozzarella, jalapeños</p>
+                        <div class="menu-item-footer">
+                            <div class="menu-item-price">Rs 1,599</div>
+                            <button class="btn">ADD TO ORDER</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chicken -->
+                <div class="menu-item" data-category="chicken">
+                    <div class="menu-item-image" style="background: linear-gradient(45deg, #d4af37, #c9a227);"></div>
+                    <div class="menu-item-badge">
+                        <div class="triangle" style="width:20px;height:20px;background:#000;"></div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Crispy Chicken Showdown</h3>
+                        <p class="menu-item-desc">Extra crispy chicken, signature pink seasoning, dipping sauces</p>
+                        <div class="menu-item-footer">
+                            <div class="menu-item-price">Rs 999</div>
+                            <button class="btn">ADD TO ORDER</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Drink -->
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-image" style="background: linear-gradient(45deg, #9b59b6, #3498db);"></div>
+                    <div class="menu-item-badge">
+                        <div class="square" style="width:20px;height:20px;background:#000;"></div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3 class="menu-item-title">Pink Player Potion</h3>
+                        <p class="menu-item-desc">Strawberry lemonade with edible glitter and mint</p>
+                        <div class="menu-item-footer">
+                            <div class="menu-item-price">Rs 399</div>
+                            <button class="btn">ADD TO ORDER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <h2 class="section-title">HOW IT WORKS</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">📱</div>
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">ORDER</h3>
+                    <p>Select your cinematic meal via our site, WhatsApp, or phone</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">👨‍🍳</div>
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">PREPARE</h3>
+                    <p>Our chefs craft your meal with premium ingredients in our secure kitchen</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">🚗</div>
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">DELIVER</h3>
+                    <p>A guard arrives in our pink Civic with your temperature-sealed meal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours & Coverage -->
+    <section id="hours-coverage" class="section">
+        <div class="container">
+            <h2 class="section-title">HOURS & COVERAGE</h2>
+            <div class="coverage-container">
+                <div class="hours">
+                    <h3 class="hours-title">OPERATING HOURS</h3>
+                    <ul class="hours-list">
+                        <li><span>Monday</span><span>11:00 AM — 11:00 PM</span></li>
+                        <li><span>Tuesday</span><span>11:00 AM — 11:00 PM</span></li>
+                        <li><span>Wednesday</span><span>11:00 AM — 11:00 PM</span></li>
+                        <li><span>Thursday</span><span>11:00 AM — 11:00 PM</span></li>
+                        <li><span>Friday</span><span>11:00 AM — 11:00 PM</span></li>
+                        <li><span>Saturday</span><span>11:00 AM — 11:00 PM</span></li>
+                        <li><span>Sunday</span><span>11:00 AM — 11:00 PM</span></li>
+                    </ul>
+                    <p style="margin-top: 20px; text-align: center; font-weight: 700;">
+                        Delivery only. No dine-in available.
+                    </p>
+                </div>
+                <div class="map-container">
+                    <div style="height: 100%; background: #333; display: flex; justify-content: center; align-items: center; color: #555; font-weight: 700;">
+                        [MAP OF KARACHI WITH SERVICE AREAS HIGHLIGHTED]
+                    </div>
+                    <div class="map-overlay">
+                        <h3>SERVICE AREAS</h3>
+                        <div class="zones-list">
+                            <div class="zone">Clifton</div>
+                            <div class="zone">Defence</div>
+                            <div class="zone">Gulshan</div>
+                            <div class="zone">PECHS</div>
+                            <div class="zone">Saddar</div>
+                            <div class="zone">DHA</div>
+                            <div class="zone">Bahadurabad</div>
+                            <div class="zone">Gulistan-e-Johar</div>
+                        </div>
+                        <p style="margin-top: 20px;">Delivery within 45 minutes in these zones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2 class="section-title">PLAYER REVIEWS</h2>
+            <div class="reviews-container">
+                <div class="review">
+                    <div class="review-header">
+                        <div class="review-avatar">A</div>
+                        <div class="review-name">Ali R.</div>
+                    </div>
+                    <div class="review-rating">★★★★★</div>
+                    <p class="review-text">"The whole experience from ordering to delivery was like something from a movie! The Final Boss Burger is incredible."</p>
+                    <div class="review-date">June 15, 2023</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="section">
+        <div class="container">
+            <h2 class="section-title">PLACE YOUR ORDER</h2>
+            <div class="order-container">
+                <div class="order-form">
+                    <form id="order-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Delivery Address</label>
+                            <textarea id="address" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="items">Items to Order</label>
+                            <textarea id="items" placeholder="List items from menu..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="instructions">Special Instructions</label>
+                            <textarea id="instructions"></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width:100%;">CONFIRM ORDER</button>
+                    </form>
+                </div>
+                <div class="whatsapp-info">
+                    <div class="whatsapp-icon">💬</div>
+                    <h3>ORDER VIA WHATSAPP</h3>
+                    <p>Prefer to order directly through WhatsApp? Send your order details to our official number:</p>
+                    <a href="https://wa.me/92XXXXXXXXX" class="phone-number">+92-XXX-XXXXXXX</a>
+                    <p>Our guards monitor WhatsApp 24/7 for instant order processing.</p>
+                    <a href="https://wa.me/92XXXXXXXXX" class="btn">CHAT NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>GAME OVER MEALS</h4>
+                    <p style="color: #aaa; margin-bottom: 20px;">Cinematic delivery experience. Premium street food. Unforgettable presentation.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="TikTok">🎵</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>QUICK LINKS</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#why">Our Story</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#hours-coverage">Coverage</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>CONTACT</h4>
+                    <ul class="footer-links">
+                        <li>Phone: <a href="tel:+92XXXXXXXXX">+92-XXX-XXXXXXX</a></li>
+                        <li>WhatsApp: <a href="https://wa.me/92XXXXXXXXX">+92-XXX-XXXXXXX</a></li>
+                        <li>Email: <a href="mailto:orders@gameovermeals.com">orders@gameovermeals.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>LEGAL</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Delivery Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2023 Game Over Meals. All rights reserved.
+            </div>
+        </div>
+        <div class="disclaimer">
+            Branding & visuals are Squid-Game-inspired. GAME OVER MEALS is an independent business and not affiliated with the original series.
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Sticky order bar
+        const orderBar = document.querySelector('.sticky-order-bar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                orderBar.classList.add('visible');
+            } else {
+                orderBar.classList.remove('visible');
+            }
+        });
+        
+        // Menu filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const menuItems = document.querySelectorAll('.menu-item');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter items
+                const filter = this.getAttribute('data-filter');
+                
+                menuItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+        
+        // Form submission
+        const orderForm = document.getElementById('order-form');
+        if (orderForm) {
+            orderForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                const address = document.getElementById('address').value;
+                const items = document.getElementById('items').value;
+                
+                // Create WhatsApp message
+                const message = `New Order:%0A%0AName: ${name}%0APhone: ${phone}%0AAddress: ${address}%0AItems:%0A${items}`;
+                
+                // Redirect to WhatsApp
+                window.location.href = `https://wa.me/92XXXXXXXXX?text=${message}`;
+            });
+        }
+        
+        // Parallax effect
+        const hero = document.getElementById('hero');
+        if (hero) {
+            hero.addEventListener('mousemove', function(e) {
+                const x = e.clientX / window.innerWidth;
+                const y = e.clientY / window.innerHeight;
+                
+                const layers = document.querySelectorAll('.parallax-layer');
+                layers.forEach((layer, index) => {
+                    const speed = (index + 1) * 0.5;
+                    const xPos = -(x * 20 * speed) + 10;
+                    const yPos = -(y * 20 * speed) + 10;
+                    
+                    layer.style.transform = `translate(${xPos}px, ${yPos}px)`;
+                });
+            });
+        }
+        
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    entry.target.classList.remove('hidden');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('.section').forEach(section => {
+            section.classList.add('hidden');
+            observer.observe(section);
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
